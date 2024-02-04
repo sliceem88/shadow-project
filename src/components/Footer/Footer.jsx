@@ -1,12 +1,17 @@
-import React from "react";
-import List from "@mui/material/List";
-import FooterItem from "./FooterItem";
+"use client";
+import { MenuItem, MenuList } from "@mui/material";
+import Link from "next/link";
+import { footerListItems } from "./Footer.config";
 
 function Footer() {
   return (
-    <List>
-      <FooterItem />
-    </List>
+    <MenuList className="Footer">
+      {footerListItems.map((item) => (
+        <MenuItem className="Footer-Item">
+          <Link href="">{item.name}</Link>
+        </MenuItem>
+      ))}
+    </MenuList>
   );
 }
 
