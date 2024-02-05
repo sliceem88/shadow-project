@@ -8,7 +8,7 @@ function Footer() {
     <MenuList className="Footer">
       {footerListItems.map((item) => (
         <MenuItem key={item.link} className="Footer-Item">
-          <Link href="">{item.name}</Link>
+          <Link href={item.link}>{item.name}</Link>
         </MenuItem>
       ))}
     </MenuList>
