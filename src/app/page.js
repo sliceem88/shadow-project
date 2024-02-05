@@ -1,8 +1,3 @@
 export default function Home() {
-  return (
-    
-    <main>
-      Shadow platform project
-    </main>
-  )
+  return <main>Shadow platform project</main>;
 }
