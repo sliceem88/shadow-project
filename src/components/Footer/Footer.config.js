@@ -31,8 +31,4 @@ export const footerListItems = [
     name: "Terms and conditions",
     link: "/terms-and-conditions",
   },
-  {
-    name: "Support",
-    link: "/support",
-  },
 ];
