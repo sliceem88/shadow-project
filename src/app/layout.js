@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer/Footer";
+import RegisterShadow from "@/components/RegisterShadow/RegisterShadow";
 
 export const metadata = {
   title: "Shadow Platform",
@@ -9,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>{children}</body>
+      <RegisterShadow />
       <Footer />
     </html>
   );
