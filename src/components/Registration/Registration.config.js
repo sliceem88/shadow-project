@@ -1,18 +1,19 @@
+import ShadowIcon from "./img/shadow.png";
+import WorkerIcon from "./img/work.png";
+
 export const RegistrationCards = [
   {
-    icon: "group",
-    iconLink:
-      "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0",
+    icon: ShadowIcon,
+    alt: "Shadow icon",
     name: "Ēnotājs",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "Ēnotāja iespējas, labumi, teikums, kas uzrunā ēnu reģistrēties, ko varēs iegūt, kādas funkcijas vtmldz.",
     link: "/registration/shadow",
   },
   {
-    icon: "work",
-    iconLink:
-      "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0",
+    icon: WorkerIcon,
+    alt: "Worker icon",
     name: "Profesionālis vai uzņēmums",
-    text: "Dolorum facilis culpa incidunt. Perferendis deleniti tenetur amet nobis quisquam officia.",
+    text: "Teikums vai 2 par to, ka te var reģistēties gan kā uzņēmums, gan kā profesionālis, kas piedāvā ēnošanas iespējas.",
     link: "/registration/professional",
   },
 ];

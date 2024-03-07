@@ -1,4 +1,12 @@
-import Registration from "@/components/Registration/Registration";
+import Link from "next/link";
+
 export default function Home() {
-  return <main>Shadow platform project</main>;
+  return (
+    <main>
+      Shadow platform project
+      <button>
+        <Link href="/registration">Reģistrēties</Link>
+      </button>
+    </main>
+  );
 }

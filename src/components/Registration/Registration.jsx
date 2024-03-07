@@ -2,20 +2,18 @@
 import { RegistrationCards } from "./Registration.config";
 import styles from "./Registration.module.sass";
 import Link from "next/link";
+import BackArrow from "./img/back_arrow.png";
+import Image from "next/image";
 
 const Registration = () => {
   return (
     <>
       <div className={styles.reg_header} key="reg-header"></div>
       <div className={styles.reg_body} key="reg-body">
-        <span className="material-symbols-outlined">
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-          />
-          arrow_back_ios
-        </span>
-        <Link href="/">Atpakaļ</Link>
+        <Image src={BackArrow} alt="Back arrow icon" />
+        <Link href="/" className={styles.back}>
+          Atpakaļ
+        </Link>
         <div className={styles.reg_content}>
           <h1 className={styles.title}>
             Pievienojies kā ēnotājs vai kā profesionālis vai uzņēmums?
@@ -26,10 +24,7 @@ const Registration = () => {
           <div className={styles.reg_cards} key="reg-cards">
             {RegistrationCards.map((item) => (
               <div className={styles.card} key={item.link}>
-                <span className="material-symbols-outlined">
-                  <link rel="stylesheet" href={item.iconLink} />
-                  {item.icon}
-                </span>
+                <Image src={item.icon} alt={item.alt} />
                 <h3 className={styles.card_title}>{item.name}</h3>
                 <p className={styles.card_text}>{item.text}</p>
                 <button className={styles.button} href={item.link}>
