@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import "./globals.sass";
+import "./globals.scss";
 
 export const metadata = {
   title: "Shadow Platform",
