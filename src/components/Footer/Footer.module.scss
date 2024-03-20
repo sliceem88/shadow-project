@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.footer {
+  background-color: #f1f1f1;
+  max-height: 295px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: "Roboto";
+  color: #4a4a4a;
+
+  &_title {
+    font-weight: 500;
+  }
+
+  &_link {
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+
+  &_upperblock {
+    display: flex;
+    padding-bottom: 24px;
+    gap: 175px;
+    padding-right: 60px;
+    padding-left: 60px;
+    line-height: 24px;
+
+    &_left {
+      width: 330px;
+
+      &_email {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        gap: 8px;
+        align-items: center;
+      }
+
+      &_phone {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+
+      &_socials {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        gap: 24px;
+      }
+    }
+
+    &_right {
+      width: 776px;
+      display: flex;
+      gap: 4px;
+
+      &_first3blocks {
+        width: 120px;
+      }
+
+      &_lastblock {
+        max-width: 260px;
+
+        &_text {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  &_lowerblock {
+    display: flex;
+    padding: 8px 60px 0px 60px;
+    gap: 256px;
+    line-height: 21px;
+    font-size: 14px;
+    border-top: 1px solid;
+
+    &_left {
+      width: 643px;
+    }
+
+    &_right {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

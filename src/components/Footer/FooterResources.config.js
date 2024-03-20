@@ -9,6 +9,6 @@ export const footerResourcesList = [
   },
   {
     name: "Lasītava",
-    link: "/library",
+    link: "/reading-room",
   },
 ];
