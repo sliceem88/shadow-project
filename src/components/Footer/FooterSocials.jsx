@@ -4,11 +4,15 @@ import Image from "next/image";
 import styles from "./Footer.module.scss";
 
 const FooterContacts = () => {
-  return footerSocialsList.map((item) => (
-    <Link href={item.link} key={item.link} target="_blank">
-      <Image src={item.icon} alt={item.alt} />
-    </Link>
-  ));
+  return (
+    <div className={styles.footer_upperblock_left_socials}>
+      {footerSocialsList.map((item) => (
+        <Link href={item.link} key={item.link} target="_blank">
+          <Image src={item.icon} alt={item.alt} />
+        </Link>
+      ))}
+    </div>
+  );
 };
 
 export default FooterContacts;

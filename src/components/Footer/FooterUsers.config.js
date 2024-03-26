@@ -4,7 +4,7 @@ export const footerUsersList = [
     link: "/for-shadower",
   },
   {
-    name: "Uzņēmumam",
-    link: "/for-company",
+    name: "Ēnu devējam",
+    link: "/for-shadow-giver",
   },
 ];

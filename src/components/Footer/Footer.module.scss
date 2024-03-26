@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .footer {
-  background-color: #f1f1f1;
+  background-color: #0088a1;
   max-height: 295px;
   padding-top: 24px;
   padding-bottom: 24px;
   font-family: "Roboto";
-  color: #4a4a4a;
+  color: #ffffff;
 
   &_title {
     font-weight: 500;
@@ -14,7 +14,7 @@
 
   &_link {
     text-decoration: none;
-    color: #4a4a4a;
+    color: #ffffff;
   }
 
   &_upperblock {
@@ -30,7 +30,7 @@
 
       &_email {
         display: flex;
-        margin-top: 10px;
+        margin-top: 12px;
         margin-bottom: 16px;
         gap: 8px;
         align-items: center;
@@ -45,7 +45,7 @@
       &_socials {
         display: flex;
         align-items: center;
-        margin-top: 24px;
+        margin-top: 40px;
         gap: 24px;
       }
     }
@@ -53,7 +53,7 @@
     &_right {
       width: 776px;
       display: flex;
-      gap: 4px;
+      gap: 32px;
 
       &_first3blocks {
         width: 120px;
@@ -84,6 +84,7 @@
     &_right {
       display: flex;
       gap: 40px;
+      width: 257px;
     }
   }
 }

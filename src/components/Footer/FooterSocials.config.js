@@ -12,7 +12,7 @@ export const footerSocialsList = [
   {
     icon: Linkedin,
     alt: "Linkedin icon",
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/trywork-lv/",
   },
   {
     icon: Twitter,
