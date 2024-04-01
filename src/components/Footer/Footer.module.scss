@@ -65,6 +65,18 @@
         &_text {
           margin-bottom: 16px;
         }
+        &_button {
+          color: #ffffff;
+          text-transform: none;
+          font-size: 14px;
+          letter-spacing: 0.46;
+          padding: 4px 10px;
+          line-height: 22px;
+          border: 1px solid #ffffff;
+          &:hover {
+            border: 1px solid #ffffff;
+          }
+        }
       }
     }
   }

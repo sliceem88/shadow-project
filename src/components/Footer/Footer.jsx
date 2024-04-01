@@ -10,7 +10,7 @@ import Image from "next/image";
 import Logo from "./img/logo-place.png";
 import Envelope from "./img/envelope.png";
 import Phone from "./img/phone.png";
-import FooterButton from "./FooterButton";
+import { Button } from "@mui/material";
 
 function Footer() {
   return (
@@ -38,7 +38,14 @@ function Footer() {
               Lūdzu, dalies ar ieteikumiem par uzlabojumiem mājaslapā un atbildi
               uz jautājumiem
             </p>
-            <FooterButton />
+            <Button
+              className={styles.footer_upperblock_right_lastblock_button}
+              variant="outlined"
+              size="small"
+              color="primary"
+            >
+              Iesaki
+            </Button>
           </div>
         </div>
       </div>
