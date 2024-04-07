@@ -25,8 +25,46 @@ const Header = () => {
         </div>
         <HeaderTabs tabList={HeaderTabsLower} tabStyle="lowerblock_tabs" />
         <div>
-          <Button>Ienākt</Button>
-          <Button>Reģistrēties</Button>
+          <Button
+            sx={{
+              color: "#0088A1",
+              textTransform: "none",
+              fontSize: "13px",
+              letterSpacing: "0.46",
+              padding: "4px 10px",
+              fontWeight: "500",
+              lineHeight: "22px",
+              border: "1px solid #0088A1",
+              "&:hover": {
+                border: "1px solid #0088A1",
+              },
+            }}
+            variant="outlined"
+            size="small"
+            color="primary"
+          >
+            Ienākt
+          </Button>
+          <Button
+            sx={{
+              color: "#ffffff",
+              backgroundColor: "#0088A1",
+              textTransform: "none",
+              fontSize: "13px",
+              letterSpacing: "0.46",
+              padding: "4px 10px",
+              fontWeight: "500",
+              lineHeight: "22px",
+              "&:hover": {
+                backgroundColor: "#347DCA",
+              },
+            }}
+            variant="contained"
+            size="small"
+            color="primary"
+          >
+            Reģistrēties
+          </Button>
         </div>
       </div>
     </div>

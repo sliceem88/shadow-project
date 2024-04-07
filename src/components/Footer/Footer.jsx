@@ -39,13 +39,13 @@ function Footer() {
               uz jautājumiem
             </p>
             <Button
-              // className={styles.footer_upperblock_right_lastblock_button}
               sx={{
                 color: "#ffffff",
                 textTransform: "none",
                 fontSize: "14px",
                 letterSpacing: "0.46",
                 padding: "4px 10px",
+                fontWeight: "500",
                 lineHeight: "22px",
                 border: "1px solid #ffffff",
                 "&:hover": {

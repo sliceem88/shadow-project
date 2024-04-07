@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Tab } from "@mui/material";
 import { Tabs } from "@mui/material";
 import styles from "./Header.module.scss";
-import Link from "next/link";
+// import Link from "next/link";
 
 const HeaderTabs = ({ tabList, tabStyle }) => {
   const [value, setValue] = useState("");
@@ -12,7 +12,12 @@ const HeaderTabs = ({ tabList, tabStyle }) => {
     setValue(newValue);
   };
   return (
-    <Tabs value={value} onChange={handleChange}>
+    <Tabs
+      TabIndicatorProps={{ style: { backgroundColor: "#84EAFF" } }}
+      value={value}
+      onChange={handleChange}
+      textColor="#000000" //šis būs mainīgs
+    >
       {tabList.map((item) => (
         <Tab
           value={item.value}
@@ -21,6 +26,12 @@ const HeaderTabs = ({ tabList, tabStyle }) => {
           label={item.name}
           // component={Link}
           // href={item.link}
+          sx={{
+            textTransform: "none",
+            "&.Mui-selected": {
+              color: "#0088A1", //šis būs mainīgs
+            },
+          }}
         ></Tab>
       ))}
     </Tabs>
