@@ -5,17 +5,39 @@
   //   height: 133px;
 
   &_upperblock {
-    height: 66px;
+    max-height: 66px;
     padding: 8px 60px;
+    justify-content: center;
     background-color: #0088a1;
     display: flex;
+    gap: 461px;
+
+    &_right {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      &_input {
+        height: 38px;
+        width: 340px;
+        border-radius: 100px;
+      }
+    }
   }
 
   &_lowerblock {
-    height: 66px;
+    max-height: 66px;
     padding: 8px 60px;
+    justify-content: center;
     background-color: #ffffff;
     border-top: 2px solid #b8a7f7;
     display: flex;
+    gap: 230px;
+    align-items: center;
+
+    &_right {
+      display: flex;
+      gap: 16px;
+    }
   }
 }

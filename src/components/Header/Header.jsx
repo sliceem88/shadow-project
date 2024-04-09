@@ -3,6 +3,7 @@ import styles from "./Header.module.scss";
 import Image from "next/image";
 import Logo from "./img/logo.png";
 import LogoText from "./img/logoText.png";
+import Person from "./img/person.png";
 import HeaderTabs from "./HeaderTabs";
 import { HeaderTabsLower } from "./HeaderTabsLower.config";
 import { HeaderTabsUpper } from "./HeaderTabsUpper.config";
@@ -13,8 +14,13 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.header_upperblock}>
         <HeaderTabs tabList={HeaderTabsUpper} tabStyle="upperblock_tabs" />
-        <div>
-          <input type="text"></input>
+        <div className={styles.header_upperblock_right}>
+          <input
+            type="text"
+            className={styles.header_upperblock_right_input}
+          ></input>
+          <Image src={Person} />
+          <div>LV</div>
         </div>
       </div>
 
@@ -24,7 +30,7 @@ const Header = () => {
           <Image src={LogoText} alt="Logo text" />
         </div>
         <HeaderTabs tabList={HeaderTabsLower} tabStyle="lowerblock_tabs" />
-        <div>
+        <div className={styles.header_lowerblock_right}>
           <Button
             sx={{
               color: "#0088A1",
@@ -56,7 +62,7 @@ const Header = () => {
               fontWeight: "500",
               lineHeight: "22px",
               "&:hover": {
-                backgroundColor: "#347DCA",
+                backgroundColor: "#0088A1",
               },
             }}
             variant="contained"
