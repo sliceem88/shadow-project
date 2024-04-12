@@ -2,10 +2,9 @@
 import { useState } from "react";
 import { Tab } from "@mui/material";
 import { Tabs } from "@mui/material";
-import styles from "./Header.module.scss";
 // import Link from "next/link";
 
-const HeaderTabs = ({ tabList, tabStyle }) => {
+const HeaderTabs = ({ tabList, tabColor, tabActiveColor }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (event, newValue) => {
@@ -13,23 +12,28 @@ const HeaderTabs = ({ tabList, tabStyle }) => {
   };
   return (
     <Tabs
-      TabIndicatorProps={{ style: { backgroundColor: "#84EAFF" } }}
+      TabIndicatorProps={{ style: { backgroundColor: "#84EAFF", height: 8 } }}
       value={value}
       onChange={handleChange}
-      textColor="#000000" //šis būs mainīgs
     >
       {tabList.map((item) => (
         <Tab
           value={item.value}
-          className={styles.header_ + tabStyle}
           key={item.name}
           label={item.name}
           // component={Link}
           // href={item.link}
           sx={{
             textTransform: "none",
+            padding: "9px 16px",
+            fontSize: "16px",
+            lineHeight: "26px",
+            letterSpacing: "0.46px",
+            fontWeight: "500",
+            color: tabColor,
             "&.Mui-selected": {
-              color: "#0088A1", //šis būs mainīgs
+              color: tabActiveColor,
+              fontWeight: "700",
             },
           }}
         ></Tab>

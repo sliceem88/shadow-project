@@ -2,15 +2,14 @@
 
 .header {
   font-family: "Roboto";
-  //   height: 133px;
 
   &_upperblock {
     max-height: 66px;
     padding: 8px 60px;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #0088a1;
     display: flex;
-    gap: 461px;
+    // gap: 461px;
 
     &_right {
       display: flex;
@@ -19,8 +18,21 @@
 
       &_input {
         height: 38px;
-        width: 340px;
+        width: 321px;
         border-radius: 100px;
+      }
+
+      &_person {
+        width: 13.6px;
+        height: 19px;
+      }
+
+      &_lv {
+        font-size: 16px;
+        line-height: 18.75px;
+        font-weight: 500;
+        color: #ffffff;
+        padding: 8px;
       }
     }
   }
@@ -28,16 +40,15 @@
   &_lowerblock {
     max-height: 66px;
     padding: 8px 60px;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #ffffff;
-    border-top: 2px solid #b8a7f7;
     display: flex;
-    gap: 230px;
+    // gap: 230px;
     align-items: center;
 
     &_right {
       display: flex;
-      gap: 16px;
+      gap: 10px;
     }
   }
 }
