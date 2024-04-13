@@ -9,6 +9,7 @@ import HeaderTabs from "./HeaderTabs";
 import { HeaderTabsLower } from "./HeaderTabsLower.config";
 import { HeaderTabsUpper } from "./HeaderTabsUpper.config";
 import { Button } from "@mui/material";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -26,15 +27,20 @@ const Header = () => {
           ></input>
           <Image
             src={Person}
+            alt="Person icon"
             className={styles.header_upperblock_right_person}
           />
           <div className={styles.header_upperblock_right_lv}>LV</div>
         </div>
       </div>
       <div className={styles.header_lowerblock}>
-        <div>
-          <Image src={Logo} alt="Logo" />
-          <Image src={LogoText} alt="Logo text" />
+        <div className={styles.header_lowerblock_left}>
+          <div>
+            <Image src={Logo} alt="Logo" />
+          </div>
+          <div>
+            <Image src={LogoText} alt="Logo text" />
+          </div>
         </div>
         <HeaderTabs
           tabList={HeaderTabsLower}
@@ -85,6 +91,8 @@ const Header = () => {
             variant="contained"
             size="small"
             color="primary"
+            component={Link}
+            href="/registration"
           >
             Reģistrēties
           </Button>

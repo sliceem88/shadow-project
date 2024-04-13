@@ -4,7 +4,7 @@
   font-family: "Roboto";
 
   &_upperblock {
-    max-height: 66px;
+    max-height: 54px;
     padding: 8px 60px;
     justify-content: space-between;
     background-color: #0088a1;
@@ -25,6 +25,7 @@
       &_person {
         width: 13.6px;
         height: 19px;
+        // padding: 15.9px 10.5px;
       }
 
       &_lv {
@@ -38,13 +39,20 @@
   }
 
   &_lowerblock {
-    max-height: 66px;
+    max-height: 56px;
     padding: 8px 60px;
     justify-content: space-between;
     background-color: #ffffff;
     display: flex;
     // gap: 230px;
     align-items: center;
+    border-bottom: 1px solid #b8a7f7;
+
+    &_left {
+      display: flex;
+      gap: 12.85px;
+      align-items: center;
+    }
 
     &_right {
       display: flex;

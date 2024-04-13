@@ -2,9 +2,9 @@
 import { useState } from "react";
 import { Tab } from "@mui/material";
 import { Tabs } from "@mui/material";
-// import Link from "next/link";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-const HeaderTabs = ({ tabList, tabColor, tabActiveColor }) => {
+const HeaderTabs = ({ tabList, tabColor, tabActiveColor, iconPlace }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (event, newValue) => {
@@ -12,28 +12,40 @@ const HeaderTabs = ({ tabList, tabColor, tabActiveColor }) => {
   };
   return (
     <Tabs
-      TabIndicatorProps={{ style: { backgroundColor: "#84EAFF", height: 8 } }}
+      TabIndicatorProps={{
+        display: "none",
+      }}
       value={value}
       onChange={handleChange}
+      style={{ height: "38px", display: "flex", alignItems: "center" }}
     >
       {tabList.map((item) => (
         <Tab
           value={item.value}
           key={item.name}
           label={item.name}
-          // component={Link}
-          // href={item.link}
+          icon={<ChevronRightIcon sx={{ transform: "rotate(90deg)" }} />}
+          iconPosition="end"
+          disableRipple
           sx={{
             textTransform: "none",
-            padding: "9px 16px",
+            padding: "0",
+            marginRight: "24px",
             fontSize: "16px",
             lineHeight: "26px",
             letterSpacing: "0.46px",
             fontWeight: "500",
             color: tabColor,
+            textUnderlineOffset: "8px",
             "&.Mui-selected": {
               color: tabActiveColor,
               fontWeight: "700",
+              textDecoration: "underline #84EAFF 4px",
+            },
+            "&:hover": {
+              color: tabActiveColor,
+              fontWeight: "700",
+              textDecoration: "underline #84EAFF 4px",
             },
           }}
         ></Tab>
