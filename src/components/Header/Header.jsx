@@ -1,15 +1,21 @@
 "use client";
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import Logo from "./img/logo.png";
+import Logo from "./img/logoImage.svg";
 import LogoText from "./img/logoText.png";
-import Person from "./img/personVector.svg";
-import Search from "./img/search.png";
+import PersonIcon from "./img/personVector.svg";
+import SearchIcon from "./img/searchIcon.svg";
 import HeaderTabs from "./HeaderTabs";
 import { HeaderTabsLower } from "./HeaderTabsLower.config";
 import { HeaderTabsUpper } from "./HeaderTabsUpper.config";
 import { Button } from "@mui/material";
 import Link from "next/link";
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({
+  weight: ["500", "700"],
+  subsets: ["latin"],
+});
 
 const Header = () => {
   return (
@@ -18,15 +24,25 @@ const Header = () => {
         <HeaderTabs
           tabList={HeaderTabsUpper}
           tabColor="#FFFFFF"
+          tabHoverColor="#84EAFF"
           tabActiveColor="#FFFFFF"
         />
         <div className={styles.header_upperblock_right}>
-          <input
-            type="text"
-            className={styles.header_upperblock_right_input}
-          ></input>
+          <div className={styles.header_upperblock_right_inputWrapper}>
+            <input
+              type="text"
+              className={styles.header_upperblock_right_inputWrapper_input}
+            ></input>
+            <button
+              className={
+                styles.header_upperblock_right_inputWrapper_inputButton
+              }
+            >
+              <Image src={SearchIcon} alt="Search icon" />
+            </button>
+          </div>
           <Image
-            src={Person}
+            src={PersonIcon}
             alt="Person icon"
             className={styles.header_upperblock_right_person}
           />
@@ -38,13 +54,24 @@ const Header = () => {
           <div>
             <Image src={Logo} alt="Logo" />
           </div>
-          <div>
-            <Image src={LogoText} alt="Logo text" />
+          <div className={styles.header_lowerblock_left_logoTextPlace}>
+            {/* <Image src={LogoText} alt="Logo text" /> */}
+            <div
+              className={styles.header_lowerblock_left_logoTextPlace_firstWord}
+            >
+              Try
+            </div>
+            <div
+              className={styles.header_lowerblock_left_logoTextPlace_secondWord}
+            >
+              Work
+            </div>
           </div>
         </div>
         <HeaderTabs
           tabList={HeaderTabsLower}
           tabColor="#212427"
+          tabHoverColor="#339FB3"
           tabActiveColor="#0088A1"
         />
         <div className={styles.header_lowerblock_right}>

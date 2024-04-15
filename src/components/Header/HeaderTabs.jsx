@@ -3,20 +3,27 @@ import { useState } from "react";
 import { Tab } from "@mui/material";
 import { Tabs } from "@mui/material";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import { HeaderTabsLower } from "./HeaderTabsLower.config";
 
-const HeaderTabs = ({ tabList, tabColor, tabActiveColor, iconPlace }) => {
+const HeaderTabs = ({ tabList, tabColor, tabHoverColor, tabActiveColor }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const isThereAnIcon = () => {
+    if (tabList === HeaderTabsLower)
+      return <ChevronRightIcon sx={{ transform: "rotate(90deg)" }} />;
+    else return "";
+  };
+
   return (
     <Tabs
-      TabIndicatorProps={{
-        display: "none",
-      }}
       value={value}
+      aria-label="Navigation"
       onChange={handleChange}
+      sx={{ "& .MuiTabs-indicator": { display: "none" } }}
       style={{ height: "38px", display: "flex", alignItems: "center" }}
     >
       {tabList.map((item) => (
@@ -24,7 +31,7 @@ const HeaderTabs = ({ tabList, tabColor, tabActiveColor, iconPlace }) => {
           value={item.value}
           key={item.name}
           label={item.name}
-          icon={<ChevronRightIcon sx={{ transform: "rotate(90deg)" }} />}
+          icon={isThereAnIcon()}
           iconPosition="end"
           disableRipple
           sx={{
@@ -39,12 +46,10 @@ const HeaderTabs = ({ tabList, tabColor, tabActiveColor, iconPlace }) => {
             textUnderlineOffset: "8px",
             "&.Mui-selected": {
               color: tabActiveColor,
-              fontWeight: "700",
               textDecoration: "underline #84EAFF 4px",
             },
             "&:hover": {
-              color: tabActiveColor,
-              fontWeight: "700",
+              color: tabHoverColor,
               textDecoration: "underline #84EAFF 4px",
             },
           }}
