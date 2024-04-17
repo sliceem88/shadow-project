@@ -23,7 +23,9 @@ const HeaderTabs = ({ tabList, tabColor, tabHoverColor, tabActiveColor }) => {
       value={value}
       aria-label="Navigation"
       onChange={handleChange}
-      sx={{ "& .MuiTabs-indicator": { display: "none" } }}
+      sx={{
+        "& .MuiTabs-indicator": { display: "none" },
+      }}
       style={{ height: "38px", display: "flex", alignItems: "center" }}
     >
       {tabList.map((item) => (
@@ -38,10 +40,10 @@ const HeaderTabs = ({ tabList, tabColor, tabHoverColor, tabActiveColor }) => {
             textTransform: "none",
             padding: "0",
             marginRight: "24px",
-            fontSize: "16px",
             lineHeight: "26px",
             letterSpacing: "0.46px",
             fontWeight: "500",
+            fontSize: "16px",
             color: tabColor,
             textUnderlineOffset: "8px",
             "&.Mui-selected": {

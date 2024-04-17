@@ -1,7 +1,7 @@
 "use client";
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import Logo from "./img/logoImage.svg";
+import Logo from "./img/logoImage.png";
 import LogoText from "./img/logoText.png";
 import PersonIcon from "./img/personVector.svg";
 import SearchIcon from "./img/searchIcon.svg";
@@ -10,12 +10,6 @@ import { HeaderTabsLower } from "./HeaderTabsLower.config";
 import { HeaderTabsUpper } from "./HeaderTabsUpper.config";
 import { Button } from "@mui/material";
 import Link from "next/link";
-import { Raleway } from "next/font/google";
-
-const raleway = Raleway({
-  weight: ["500", "700"],
-  subsets: ["latin"],
-});
 
 const Header = () => {
   return (
@@ -55,17 +49,7 @@ const Header = () => {
             <Image src={Logo} alt="Logo" />
           </div>
           <div className={styles.header_lowerblock_left_logoTextPlace}>
-            {/* <Image src={LogoText} alt="Logo text" /> */}
-            <div
-              className={styles.header_lowerblock_left_logoTextPlace_firstWord}
-            >
-              Try
-            </div>
-            <div
-              className={styles.header_lowerblock_left_logoTextPlace_secondWord}
-            >
-              Work
-            </div>
+            <Image src={LogoText} alt="Logo text" />
           </div>
         </div>
         <HeaderTabs
