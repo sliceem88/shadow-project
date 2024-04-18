@@ -45,11 +45,13 @@ function Footer() {
                 fontSize: "14px",
                 fontWeight: "500",
                 letterSpacing: "0.46",
-                padding: "4px 10px",
+                padding: "4px 16px",
+                fontWeight: "500",
                 lineHeight: "22px",
-                border: "1px solid #ffffff",
+                border: "1.6px solid #ffffff",
+                borderRadius: "40px",
                 "&:hover": {
-                  border: "1px solid #ffffff",
+                  border: "1.6px solid #ffffff",
                 },
               }}
               variant="outlined"

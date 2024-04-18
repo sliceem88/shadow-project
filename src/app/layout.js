@@ -1,5 +1,9 @@
 import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/HeaderComponent/Header";
 import "./globals.scss";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme";
 import { Roboto } from "next/font/google";
 
 export const metadata = {
@@ -16,8 +20,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        {children}
-        <Footer />
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

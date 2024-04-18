@@ -7,7 +7,6 @@ import styles from "@/components/Registration/Registration.module.scss";
 export default function RegistrationPage() {
   return (
     <>
-      <div className={styles.reg_header}></div>
       <div className={styles.reg_body}>
         <Image src={BackArrow} alt="Back arrow icon" />
         <Link href="/" className={styles.back}>

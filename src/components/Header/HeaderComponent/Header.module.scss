@@ -1,0 +1,93 @@
+.header {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  &_upperblock {
+    max-height: 54px;
+    padding: 8px 60px;
+    justify-content: space-between;
+    background-color: #0088a1;
+    display: flex;
+
+    &_right {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      &_inputWrapper {
+        position: relative;
+        display: inline-block;
+
+        &_input {
+          height: 38px;
+          width: 275px;
+          padding-right: 38px;
+          padding-left: 8px;
+          border: none;
+          border-radius: 100px;
+          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+            0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        &_inputButton {
+          height: 39px;
+          border-radius: 0 100px 100px 0;
+          border: none;
+          position: absolute;
+          right: 0;
+          top: 1px;
+          background-color: transparent;
+        }
+      }
+
+      &_person {
+        width: 13.6px;
+        height: 19px;
+        padding: 5.25px 7.95px;
+      }
+
+      &_lv {
+        font-size: 16px;
+        line-height: 18.75px;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 8px;
+      }
+    }
+  }
+
+  &_lowerblock {
+    max-height: 56px;
+    padding: 8px 60px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+
+    &_left {
+      display: flex;
+      gap: 12.85px;
+      align-items: center;
+
+      &_logoTextPlace {
+        display: flex;
+        font-weight: 600;
+        font-size: 25.7px;
+        line-height: 30.17px;
+        letter-spacing: 6%;
+
+        &_firstWord {
+          color: #347dca;
+        }
+        &_secondWord {
+          color: #0088a1;
+        }
+      }
+    }
+
+    &_right {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
