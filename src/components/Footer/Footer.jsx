@@ -43,6 +43,7 @@ function Footer() {
                 color: "#ffffff",
                 textTransform: "none",
                 fontSize: "14px",
+                fontWeight: "500",
                 letterSpacing: "0.46",
                 padding: "4px 16px",
                 fontWeight: "500",
