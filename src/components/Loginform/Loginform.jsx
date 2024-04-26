@@ -1,14 +1,20 @@
 import './LoginForm.scss'
 
-function LoginForm() {
+function Loginform() {
   return (
   <div className="LoginForm">
-      <h2>Pierakstīšanās forma</h2>
-      <label for="username"><b>Lietotājvārds</b></label>
-      <input type="text" placeholder="Enter Username" id="username" required />
+      <h2>Ienākt TryWork</h2>
+      <label for="email"><b>E-pasta adrese</b></label>
+      <input type="text" placeholder="Enter email address" id="email" required />
       <label for="password"><b>Parole</b></label>
       <input type="password" placeholder="Enter Password" id="password" required />
-      <button onclick="login()">Pierakstīties</button>
+      <div>
+      <input type="checkbox"/>
+      Atcerēties mani 
+      </div>
+      <button onClick="login()">Ienākt</button>
+      <p>Vai ienākt ar</p>
+      <p1><Google>Google</Google></p1><p2><Facebook>Facebook</Facebook></p2><p3><LinkedIn>LinkedIn</LinkedIn></p3>
   </div>
   );
 }

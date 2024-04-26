@@ -1,3 +1,3 @@
-export default function Home() {
+export default function LoginForm() {
   return <main>Shadow platform project</main>;
 }
