@@ -1,4 +1,4 @@
-import styles from "./Registration.module.scss";
+import styles from "./LognForm.scss";
 import Footer from "../Footer/Footer";
 
 function Loginform() {
