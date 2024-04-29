@@ -1,5 +1,4 @@
-import styles from "./LognForm.scss";
-import Footer from "../Footer/Footer";
+import style from "@mui/material"
 
 function Loginform() {
   return (

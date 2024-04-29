@@ -1,8 +1,5 @@
 "use client";
-import styles from "./LoginSucccessPage.scss";
-import Envelope from "./img/envelope.png";
-import Logo from "./img/logo-place.png";
-import Footer from "../Footer/Footer";
+import style from "RegistrationSucessPage.scss"  
 
 function RegistrationSucessPage() {
   return (
@@ -20,4 +17,4 @@ function RegistrationSucessPage() {
   );
 }
 
-export default RegistrationSucessPage;
+
