@@ -1,17 +1,16 @@
-$black-ish: #212427;
-
 .heroblock {
   max-height: 485px;
   padding: 60px;
   display: flex;
-  gap: 43px;
+  gap: 72.4px;
   justify-content: center;
 
   &_left {
-    width: 667px;
+    max-width: 667px;
+    max-height: 332px;
 
     &_texts {
-      color: $black-ish;
+      color: #212427;
 
       &_title {
         font-weight: 600;
@@ -38,7 +37,39 @@ $black-ish: #212427;
   }
 
   &_right {
-    width: 667px;
-    // left: 799.4px;
+    max-width: 667px;
+    position: relative;
+    display: inline-block;
+    // padding: 0 53.3 14 29.4;
+
+    &_halfcircle1 {
+      position: absolute;
+      top: 226.69px;
+      right: 256.03px;
+    }
+
+    &_halfcircle2 {
+      position: absolute;
+      top: 73.27px;
+      right: 320.29px;
+    }
+
+    &_halfcircle3 {
+      position: absolute;
+      top: 101.06px;
+      right: 330.54px;
+    }
+
+    &_halfcircle4 {
+      position: absolute;
+      top: 94.63px;
+      left: 291.83px;
+    }
+
+    &_halfcircle5 {
+      position: absolute;
+      top: 83.38px;
+      left: 162.62px;
+    }
   }
 }
