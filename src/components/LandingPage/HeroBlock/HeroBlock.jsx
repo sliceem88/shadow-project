@@ -3,11 +3,12 @@ import styles from "./HeroBlock.module.scss";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import Heroblock_picture from "./img/heroblock_picture.png";
-import Halfcircle1 from "./img/halfcircle1.svg";
-import Halfcircle2 from "./img/halfcircle2.svg";
-import Halfcircle3 from "./img/halfcircle3.svg";
-import Halfcircle4 from "./img/halfcircle4.svg";
-import Halfcircle5 from "./img/halfcircle5.svg";
+import MediumLightBlueHalfcircle from "./img/mediumLightBlueHalfcircle.svg";
+import GreenHalfcircle from "./img/greenHalfcircle.svg";
+import PinkHalfcircle from "./img/pinkHalfcircle.svg";
+import BlueHalfcircle from "./img/blueHalfcircle.svg";
+import BigLightBlueHalfcircle from "./img/bigLightBlueHalfcircle.svg";
+import BigPinkHalfcircle from "./img/bigPinkHalfcircle.svg";
 
 function HeroBlock() {
   return (
@@ -72,29 +73,34 @@ function HeroBlock() {
       <div className={styles.heroblock_right}>
         <Image src={Heroblock_picture} alt="Picture of two persons talking" />
         <Image
-          className={styles.heroblock_right_halfcircle1}
+          className={styles.heroblock_right_mediumLightBlueHalfcircle}
           alt="Geometrical shape"
-          src={Halfcircle1}
+          src={MediumLightBlueHalfcircle}
         />
         <Image
-          className={styles.heroblock_right_halfcircle2}
+          className={styles.heroblock_right_greenHalfcircle}
           alt="Geometrical shape"
-          src={Halfcircle2}
+          src={GreenHalfcircle}
         />
         <Image
-          className={styles.heroblock_right_halfcircle3}
+          className={styles.heroblock_right_pinkHalfcircle}
           alt="Geometrical shape"
-          src={Halfcircle3}
+          src={PinkHalfcircle}
         />
         <Image
-          className={styles.heroblock_right_halfcircle4}
+          className={styles.heroblock_right_blueHalfcircle}
           alt="Geometrical shape"
-          src={Halfcircle4}
+          src={BlueHalfcircle}
         />
         <Image
-          className={styles.heroblock_right_halfcircle5}
+          className={styles.heroblock_right_bigLightBlueHalfcircle}
           alt="Geometrical shape"
-          src={Halfcircle5}
+          src={BigLightBlueHalfcircle}
+        />
+        <Image
+          className={styles.heroblock_right_bigPinkHalfcircle}
+          alt="Geometrical shape"
+          src={BigPinkHalfcircle}
         />
       </div>
     </div>

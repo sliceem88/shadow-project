@@ -8,6 +8,7 @@
   &_left {
     max-width: 667px;
     max-height: 332px;
+    padding-top: 15px;
 
     &_texts {
       color: #212427;
@@ -40,36 +41,43 @@
     max-width: 667px;
     position: relative;
     display: inline-block;
-    // padding: 0 53.3 14 29.4;
 
-    &_halfcircle1 {
+    &_mediumLightBlueHalfcircle {
       position: absolute;
       top: 226.69px;
       right: 256.03px;
+      z-index: 1;
     }
 
-    &_halfcircle2 {
+    &_greenHalfcircle {
       position: absolute;
       top: 73.27px;
-      right: 320.29px;
+      left: -20.56px;
     }
 
-    &_halfcircle3 {
+    &_pinkHalfcircle {
       position: absolute;
-      top: 101.06px;
+      bottom: 214.85px;
       right: 330.54px;
     }
 
-    &_halfcircle4 {
+    &_blueHalfcircle {
       position: absolute;
       top: 94.63px;
       left: 291.83px;
     }
 
-    &_halfcircle5 {
+    &_bigLightBlueHalfcircle {
       position: absolute;
       top: 83.38px;
       left: 162.62px;
+      z-index: 1;
+    }
+
+    &_bigPinkHalfcircle {
+      position: absolute;
+      top: 209.71px;
+      left: 48px;
     }
   }
 }
