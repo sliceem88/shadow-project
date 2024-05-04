@@ -1,4 +1,4 @@
-import HeroBlock from "../components/LandingPage/HeroBlock/HeroBlock";
+import HeroBlock from "../components/HeroBlock/HeroBlock";
 
 export default function Home() {
   return (

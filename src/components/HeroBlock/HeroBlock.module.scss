@@ -2,7 +2,7 @@
   max-height: 485px;
   padding: 60px;
   display: flex;
-  gap: 72.4px;
+  gap: 43px;
   justify-content: center;
 
   &_left {
@@ -35,49 +35,29 @@
         }
       }
     }
+
+    // &_button {
+    //   text-transform: "none";
+    //   margin-right: 24px; // works
+    //   width: 246px; // works
+    //   height: 42px; // works
+    //   padding: 8px 24px; // works
+    //   background-color: #347dca;
+    //   color: white;
+    //   border-radius: 40px;
+    //   font-weight: 500;
+    //   font-size: 16px;
+    //   line-height: 26px;
+    //   letter-spacing: 0.46px; // works?
+    //   &:hover {
+    //     background-color: #5c97d4;
+    //   }
+    // }
   }
 
   &_right {
     max-width: 667px;
     position: relative;
     display: inline-block;
-
-    &_mediumLightBlueHalfcircle {
-      position: absolute;
-      top: 226.69px;
-      right: 256.03px;
-      z-index: 1;
-    }
-
-    &_greenHalfcircle {
-      position: absolute;
-      top: 73.27px;
-      left: -20.56px;
-    }
-
-    &_pinkHalfcircle {
-      position: absolute;
-      bottom: 214.85px;
-      right: 330.54px;
-    }
-
-    &_blueHalfcircle {
-      position: absolute;
-      top: 94.63px;
-      left: 291.83px;
-    }
-
-    &_bigLightBlueHalfcircle {
-      position: absolute;
-      top: 83.38px;
-      left: 162.62px;
-      z-index: 1;
-    }
-
-    &_bigPinkHalfcircle {
-      position: absolute;
-      top: 209.71px;
-      left: 48px;
-    }
   }
 }
