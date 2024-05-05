@@ -8,7 +8,9 @@ const HeroBlockComponent = ({
   subtitle_span,
   subtitle,
   button_left_text,
+  button_left_link,
   button_right_text,
+  button_right_link,
   image_src,
   image_alt,
 }) => {
@@ -26,7 +28,7 @@ const HeroBlockComponent = ({
         </div>
         <div>
           <Button
-            // className={styles.heroblock_left_button}
+            href={button_left_link}
             sx={{
               textTransform: "none",
               marginRight: "24px",
@@ -48,6 +50,7 @@ const HeroBlockComponent = ({
             {button_left_text}
           </Button>
           <Button
+            href={button_right_link}
             sx={{
               textTransform: "none",
               width: "246px",
