@@ -28,14 +28,16 @@ const Registration = () => {
               textTransform: "none",
               backgroundColor: item.color,
               color: "#ffffff",
-              padding: "8px 22px",
+              height: "42px",
+              width: "138px",
+              padding: "8px 24px",
               borderRadius: "40px",
-              fontSize: "15px",
+              fontSize: "16px",
               fontWeight: "500",
               lineHeight: "26px",
               letterSpacing: "0.46px",
               "&:hover": {
-                backgroundColor: item.background,
+                backgroundColor: item.hoverColor,
               },
             }}
           >

@@ -2,8 +2,8 @@
   &_body {
     max-height: 685px;
     padding: 64px 120px;
-    background-color: #f7fafd;
-    color: #212427;
+    background-color: var(--bg-blue);
+    color: var(--black-ish);
 
     &_content {
       max-height: 573px;
@@ -31,11 +31,13 @@
           padding: 32px;
           border-style: outset;
           border-radius: 6px;
-          background-color: #ffffff;
+          background-color: var(--white);
+          border: none;
+          box-shadow: var(--shadows);
 
           &_title {
-            margin-top: 24px;
-            margin-bottom: 16px;
+            padding-top: 24px;
+            padding-bottom: 16px;
             font-weight: 600;
             font-size: 20px;
             line-height: 23.44px;
@@ -43,7 +45,7 @@
           }
 
           &_text {
-            margin-bottom: 24px;
+            padding-bottom: 24px;
             font-weight: 400;
             font-size: 16px;
             line-height: 24px;
@@ -58,7 +60,7 @@
         letter-spacing: 0.11px;
 
         &_link {
-          color: #1877f2;
+          color: var(--link);
           margin-left: 4px;
         }
       }
