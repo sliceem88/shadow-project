@@ -19,7 +19,7 @@
 
       &_cards {
         width: 760px;
-        max-height: 369px;
+        height: 369px;
         display: flex;
         justify-content: center;
         gap: 76px;
@@ -61,7 +61,7 @@
 
         &_link {
           color: var(--link);
-          margin-left: 4px;
+          margin-left: 8px;
         }
       }
     }
