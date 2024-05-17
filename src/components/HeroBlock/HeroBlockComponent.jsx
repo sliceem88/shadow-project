@@ -4,31 +4,35 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 
 const HeroBlockComponent = ({
-  title,
-  subtitle_span,
-  subtitle,
-  button_left_text,
-  button_left_link,
-  button_right_text,
-  button_right_link,
-  image_src,
-  image_alt,
+  titleData,
+  buttonLeftData,
+  buttonRightData,
+  imageData,
+  // title,
+  // subtitleSpan,
+  // subtitle,
+  // buttonLeftText,
+  // buttonLeftLink,
+  // buttonRightText,
+  // buttonRightLink,
+  // imageSrc,
+  // imageAlt,
 }) => {
   return (
     <div className={styles.heroblock}>
       <div className={styles.heroblock_left}>
         <div className={styles.heroblock_left_texts}>
-          <p className={styles.heroblock_left_texts_title}>{title}</p>
+          <p className={styles.heroblock_left_texts_title}>{titleData.title}</p>
           <p className={styles.heroblock_left_texts_subtitle}>
             <span className={styles.heroblock_left_texts_subtitle_span}>
-              {subtitle_span}
+              {titleData.subtitleSpan}
             </span>
-            &nbsp;{subtitle}
+            &nbsp;{titleData.subtitle}
           </p>
         </div>
         <div>
           <Button
-            href={button_left_link}
+            href={buttonLeftData.buttonLeftLink}
             sx={{
               textTransform: "none",
               marginRight: "24px",
@@ -47,10 +51,10 @@ const HeroBlockComponent = ({
               },
             }}
           >
-            {button_left_text}
+            {buttonLeftData.buttonLeftText}
           </Button>
           <Button
-            href={button_right_link}
+            href={buttonRightData.buttonRightLink}
             sx={{
               textTransform: "none",
               width: "246px",
@@ -67,12 +71,12 @@ const HeroBlockComponent = ({
               },
             }}
           >
-            {button_right_text}
+            {buttonRightData.buttonRightText}
           </Button>
         </div>
       </div>
       <div className={styles.heroblock_right}>
-        <Image src={image_src} alt={image_alt} />
+        <Image src={imageData.imageSrc} alt={imageData.imageAlt} />
       </div>
     </div>
   );
