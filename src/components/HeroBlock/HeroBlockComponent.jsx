@@ -8,15 +8,6 @@ const HeroBlockComponent = ({
   buttonLeftData,
   buttonRightData,
   imageData,
-  // title,
-  // subtitleSpan,
-  // subtitle,
-  // buttonLeftText,
-  // buttonLeftLink,
-  // buttonRightText,
-  // buttonRightLink,
-  // imageSrc,
-  // imageAlt,
 }) => {
   return (
     <div className={styles.heroblock}>
@@ -39,7 +30,7 @@ const HeroBlockComponent = ({
               width: "246px",
               height: "42px",
               padding: "8px 24px",
-              backgroundColor: "#347DCA",
+              backgroundColor: "var(--blue)",
               color: "white",
               borderRadius: "40px",
               fontWeight: "500",
@@ -47,7 +38,7 @@ const HeroBlockComponent = ({
               lineHeight: "26px",
               letterSpacing: "0.46px",
               "&:hover": {
-                backgroundColor: "#5C97D4",
+                backgroundColor: "var(--blue-light-1)",
               },
             }}
           >
@@ -59,7 +50,7 @@ const HeroBlockComponent = ({
               textTransform: "none",
               width: "246px",
               height: "42px",
-              backgroundColor: "#0088A1",
+              backgroundColor: "var(--green-blue)",
               color: "white",
               borderRadius: "40px",
               fontWeight: "500",
@@ -67,7 +58,7 @@ const HeroBlockComponent = ({
               lineHeight: "26px",
               letterSpacing: "0.46px",
               "&:hover": {
-                backgroundColor: "#339FB3",
+                backgroundColor: "var(--green-blue-light-1)",
               },
             }}
           >

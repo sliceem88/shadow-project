@@ -11,7 +11,7 @@
     padding-top: 15px;
 
     &_texts {
-      color: #212427;
+      color: var(--black-ish);
 
       &_title {
         font-weight: 600;
@@ -39,7 +39,5 @@
 
   &_right {
     max-width: 667px;
-    position: relative;
-    display: inline-block;
   }
 }
