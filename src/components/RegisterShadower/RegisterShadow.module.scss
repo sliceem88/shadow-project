@@ -1,0 +1,35 @@
+.registerShadower {
+  padding: 64px 120px;
+  background-color: var(--bg-blue);
+  //   justify-content: center;
+
+  &_mainBlock {
+    display: flex;
+    margin-top: 24px;
+    background-color: var(--white);
+    width: 1040px;
+
+    &_right {
+      padding: 32px 0;
+      max-width: 340px;
+      margin-left: 90px;
+
+      &_title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33.6px;
+        letter-spacing: 0.4px;
+        margin-bottom: 40px;
+        text-align: center;
+
+        &_span {
+          font-weight: 600;
+        }
+      }
+
+      //   &_form {
+
+      //   }
+    }
+  }
+}
