@@ -2,11 +2,11 @@ export const HeaderTabsUpper = [
   {
     name: "Ēnotājam",
     value: "enotajam",
-    link: "/for-shadowee",
+    link: "/for-shadower",
   },
   {
     name: "Ēnu devējam",
     value: "enu-devejam",
-    link: "/for-shadower",
+    link: "/for-shadowee",
   },
 ];

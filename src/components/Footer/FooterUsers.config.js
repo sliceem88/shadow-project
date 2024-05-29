@@ -1,10 +1,10 @@
 export const footerUsersList = [
   {
     name: "Ēnotājam",
-    link: "/for-shadowee",
+    link: "/for-shadower",
   },
   {
     name: "Ēnu devējam",
-    link: "/for-shadower",
+    link: "/for-shadowee",
   },
 ];

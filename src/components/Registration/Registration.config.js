@@ -1,19 +1,23 @@
-import ShadowIcon from "./img/shadow.png";
-import WorkerIcon from "./img/work.png";
+import ShadowIcon from "./img/personWithSuitcase.svg";
+import WorkerIcon from "./img/suitcase.svg";
 
 export const RegistrationCards = [
   {
     icon: ShadowIcon,
     alt: "Shadow icon",
     name: "Ēnotājs",
-    text: "Ēnotāja iespējas, labumi, teikums, kas uzrunā ēnu reģistrēties, ko varēs iegūt, kādas funkcijas vtmldz.",
-    link: "/registration/shadow",
+    text: "Izbaudi īstu darba pieredzi, atklāj jaunas karjeras iespējas un izzini savu aicinājumu, piedaloties ēnošanas sesijās dažādās nozarēs.",
+    link: "/registration/register-shadower",
+    color: "var(--blue)",
+    hoverColor: "var(--blue-light-1)",
   },
   {
     icon: WorkerIcon,
     alt: "Worker icon",
-    name: "Profesionālis vai uzņēmums",
-    text: "Teikums vai 2 par to, ka te var reģistēties gan kā uzņēmums, gan kā profesionālis, kas piedāvā ēnošanas iespējas.",
-    link: "/registration/professional",
+    name: "Ēnu devējs",
+    text: "Esi Uzņēmums vai Eksperts, kas dalīsies savā pieredzē, lai mudinātu arī citus sasniegt profesionālos mērķus.",
+    link: "/registration/register-shadowee",
+    color: "var(--green-blue)",
+    hoverColor: "var(--green-blue-light-1)",
   },
 ];
