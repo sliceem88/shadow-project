@@ -1,4 +1,3 @@
-// import BackArrow from "@/components/Registration/img/arrow.svg";
 import TextField from "@mui/material/TextField";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -32,6 +31,7 @@ const RegisterShadower = () => {
     <form className={styles.registerShadower_mainBlock_right_form}>
       <TextField
         fullWidth
+        required
         label="Vārds, uzvārds"
         variant="outlined"
         size="medium"
@@ -41,6 +41,7 @@ const RegisterShadower = () => {
       />
       <TextField
         fullWidth
+        required
         label="E-pasta adrese"
         variant="outlined"
         size="medium"
@@ -51,17 +52,20 @@ const RegisterShadower = () => {
       />
       <TextField
         fullWidth
+        required
         label="Parole"
         variant="outlined"
         size="medium"
         type="password"
         helperText="8 un vairāk rakstu zīmes"
+        inputProps={{ minLength: 8 }}
         sx={{
           marginBottom: "16px",
         }}
       />
       <FormControlLabel control={<Checkbox />} label={checkboxLabel} />
       <Button
+        type="submit"
         sx={{
           textTransform: "none",
           width: "340px",
