@@ -1,7 +1,8 @@
 .registerShadower {
   padding: 64px 120px;
   background-color: var(--bg-blue);
-  //   justify-content: center;
+  display: flex;
+  justify-content: center;
 
   &_mainBlock {
     display: flex;
@@ -27,9 +28,48 @@
         }
       }
 
-      //   &_form {
+      &_checkboxlink {
+        color: var(--link);
+      }
 
-      //   }
+      &_greyLines {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &_text {
+          font-weight: 400;
+          size: 14px;
+          line-height: 19.6px;
+          letter-spacing: 0.15px;
+          color: var(--dark-gray);
+        }
+      }
+
+      &_socials {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+
+        &_text {
+          margin-left: 8px;
+        }
+      }
+
+      &_login {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        margin-top: 16px;
+
+        &_link {
+          color: var(--link);
+          margin-left: 8px;
+        }
+      }
     }
   }
 }

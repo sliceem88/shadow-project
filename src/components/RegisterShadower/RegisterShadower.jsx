@@ -4,16 +4,25 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Link from "next/link";
 import styles from "./RegisterShadow.module.scss";
+import { Button } from "@mui/material";
 
 const RegisterShadower = () => {
   const checkboxLabel = (
     <p>
       Es piekrītu{" "}
-      <Link href="/rules" target="_blank">
+      <Link
+        href="/rules"
+        target="_blank"
+        className={styles.registerShadower_mainBlock_right_checkboxlink}
+      >
         lietošanas noteikumiem
       </Link>{" "}
       un{" "}
-      <Link href="/privacy" target="_blank">
+      <Link
+        href="/privacy"
+        target="_blank"
+        className={styles.registerShadower_mainBlock_right_checkboxlink}
+      >
         privātuma noteikumiem
       </Link>
     </p>
@@ -35,6 +44,7 @@ const RegisterShadower = () => {
         label="E-pasta adrese"
         variant="outlined"
         size="medium"
+        type="email"
         sx={{
           marginBottom: "24px",
         }}
@@ -45,11 +55,34 @@ const RegisterShadower = () => {
         variant="outlined"
         size="medium"
         type="password"
+        helperText="8 un vairāk rakstu zīmes"
         sx={{
           marginBottom: "16px",
         }}
       />
       <FormControlLabel control={<Checkbox />} label={checkboxLabel} />
+      <Button
+        sx={{
+          textTransform: "none",
+          width: "340px",
+          height: "42px",
+          borderRadius: "40px",
+          padding: "8px 24px",
+          marginBottom: "40px",
+          marginTop: "32px",
+          backgroundColor: "var(--blue)",
+          fontWeight: "500",
+          fontSize: "16px",
+          lineHeight: "26px",
+          letterSpacing: "0.46px",
+          color: "var(--white)",
+          "&:hover": {
+            backgroundColor: "var(--blue-light-1)",
+          },
+        }}
+      >
+        Reģistrējies
+      </Button>
     </form>
   );
 };
