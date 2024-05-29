@@ -1,3 +1,9 @@
+import HeroBlock from "../components/HeroBlock/HeroBlock";
+
 export default function Home() {
-  return <main>Shadow platform project</main>;
+  return (
+    <main>
+      <HeroBlock />
+    </main>
+  );
 }
