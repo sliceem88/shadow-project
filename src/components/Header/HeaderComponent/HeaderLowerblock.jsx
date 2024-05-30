@@ -10,14 +10,16 @@ import Link from "next/link";
 function HeaderLowerblock() {
   return (
     <div className={styles.header_lowerblock}>
-      <div className={styles.header_lowerblock_left}>
-        <div>
-          <Image src={Logo} alt="Logo" />
+      <Link href="/">
+        <div className={styles.header_lowerblock_left}>
+          <div>
+            <Image src={Logo} alt="Logo" />
+          </div>
+          <div className={styles.header_lowerblock_left_logoTextPlace}>
+            <Image src={LogoText} alt="Logo text" />
+          </div>
         </div>
-        <div className={styles.header_lowerblock_left_logoTextPlace}>
-          <Image src={LogoText} alt="Logo text" />
-        </div>
-      </div>
+      </Link>
       <HeaderTabs
         tabList={HeaderTabsLower}
         tabColor="#212427"
@@ -45,6 +47,8 @@ function HeaderLowerblock() {
           variant="outlined"
           size="small"
           color="primary"
+          component={Link}
+          href="/login"
         >
           Ienākt
         </Button>

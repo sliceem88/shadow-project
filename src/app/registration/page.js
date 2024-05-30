@@ -39,7 +39,10 @@ export default function RegistrationPage() {
         <Registration />
         <p className={styles.registration_body_content_login}>
           Esi jau reģistrējies TryWork?
-          <Link href="" className={styles.registration_body_content_login_link}>
+          <Link
+            href="/login"
+            className={styles.registration_body_content_login_link}
+          >
             Ienākt
           </Link>
         </p>
