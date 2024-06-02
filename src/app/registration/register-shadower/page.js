@@ -4,9 +4,10 @@ import Image from "next/image";
 import registerShadowerImage from "@/components/RegisterShadower/img/registerShadowerImage.png";
 import styles from "@/components/RegisterShadower/RegisterShadow.module.scss";
 import BackArrow from "@/components/RegisterShadower/img/arrowIcon.svg";
-import GreyLine from "@/components/RegisterShadower/img/greyLine.svg";
+import GreyLineRegister from "@/components/RegisterShadower/img/greyLineRegister.svg";
 import Link from "next/link";
 import RegisterShadowerSocials from "@/components/RegisterShadower/RegisterShadowerSocials";
+import GreyLineDivider from "@/components/RegisterShadower/GreyLineDivider";
 
 export default function RegisterShadowerPage() {
   return (
@@ -50,18 +51,11 @@ export default function RegisterShadowerPage() {
               </span>
             </h2>
             <RegisterShadower />
-            <div className={styles.registerShadower_mainBlock_right_greyLines}>
-              <Image src={GreyLine} alt="Grey line" />
-              <p
-                className={
-                  styles.registerShadower_mainBlock_right_greyLines_text
-                }
-              >
-                Vai reģistrējies ar
-              </p>
-              <Image src={GreyLine} alt="Grey line" />
-            </div>
-            <RegisterShadowerSocials />
+            <GreyLineDivider
+              text="Vai reģistrējies ar"
+              greyline={GreyLineRegister}
+            />
+            <RegisterShadowerSocials background="var(--white)" />
             <p className={styles.registerShadower_mainBlock_right_login}>
               Esi jau reģistrējies TryWork?
               <Link

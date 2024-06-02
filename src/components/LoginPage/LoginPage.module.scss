@@ -18,5 +18,19 @@
   }
   &_mainBlock {
     width: 340px;
+
+    &_login {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19.6px;
+      letter-spacing: 0.15px;
+      text-align: center;
+      margin-top: 16px;
+
+      &_link {
+        color: var(--link);
+        margin-left: 8px;
+      }
+    }
   }
 }

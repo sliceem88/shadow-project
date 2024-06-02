@@ -1,7 +1,11 @@
-import LoginPage from "@/components/LoginPage/LoginPage";
+import Login from "@/components/LoginPage/Login";
 import styles from "@/components/LoginPage/LoginPage.module.scss";
+import RegisterShadowerSocials from "@/components/RegisterShadower/RegisterShadowerSocials";
+import GreyLineDivider from "@/components/RegisterShadower/GreyLineDivider";
+import GreyLineLogin from "@/components/LoginPage/img/greyLineLogin.svg";
+import Link from "next/link";
 
-const Login = () => {
+const LoginPage = () => {
   return (
     <div className={styles.loginPage}>
       <div>
@@ -9,11 +13,22 @@ const Login = () => {
           Ienākt <span className={styles.loginPage_title_span}>Trywork</span>
         </h2>
         <div className={styles.loginPage_mainBlock}>
-          <LoginPage />
+          <Login />
+          <GreyLineDivider text="Vai ienākt ar" greyline={GreyLineLogin} />
+          <RegisterShadowerSocials background="var(--bg-blue)" />
+          <p className={styles.loginPage_mainBlock_login}>
+            Jauns lietotājs?
+            <Link
+              href="/registration"
+              className={styles.loginPage_mainBlock_login_link}
+            >
+              Reģistrēties
+            </Link>
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default LoginPage;
