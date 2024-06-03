@@ -3,7 +3,7 @@ import { RegisterShadowerSocialsButtons } from "./RegisterShadowerSocialsButtons
 import Image from "next/image";
 import styles from "./RegisterShadow.module.scss";
 
-const RegisterShadowerSocials = () => {
+const RegisterShadowerSocials = (background) => {
   return (
     <div className={styles.registerShadower_mainBlock_right_socials}>
       {RegisterShadowerSocialsButtons.map((item) => (
@@ -17,9 +17,9 @@ const RegisterShadowerSocials = () => {
             letterSpacing: "0.15px",
             padding: "8px",
             color: "var(--black-ish)",
-            backgroundColor: "var(--white)",
+            backgroundColor: background,
             "&:hover": {
-              backgroundColor: "var(--white)",
+              backgroundColor: background,
             },
           }}
         >
