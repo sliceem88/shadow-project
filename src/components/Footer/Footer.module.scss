@@ -1,9 +1,9 @@
 .footer {
-  background-color: #0088a1;
+  background-color: var(--green-blue);
   max-height: 295px;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #ffffff;
+  color: var(--white);
 
   &_title {
     font-weight: 700;
@@ -11,7 +11,7 @@
 
   &_link {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
   }
 
   &_upperblock {

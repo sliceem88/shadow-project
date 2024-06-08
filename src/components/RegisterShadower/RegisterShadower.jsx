@@ -66,6 +66,7 @@ const RegisterShadower = () => {
       <FormControlLabel control={<Checkbox />} label={checkboxLabel} />
       <Button
         type="submit"
+        href="/welcome"
         sx={{
           textTransform: "none",
           width: "340px",

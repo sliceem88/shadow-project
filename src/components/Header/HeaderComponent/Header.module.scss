@@ -1,12 +1,11 @@
 .header {
-  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadows);
 
   &_upperblock {
     max-height: 54px;
     padding: 8px 60px;
     justify-content: space-between;
-    background-color: #0088a1;
+    background-color: var(--green-blue);
     display: flex;
 
     &_right {
@@ -25,8 +24,7 @@
           padding-left: 8px;
           border: none;
           border-radius: 100px;
-          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
-            0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: var(--shadows);
         }
 
         &_inputButton {
@@ -50,7 +48,7 @@
         font-size: 16px;
         line-height: 18.75px;
         font-weight: 600;
-        color: #ffffff;
+        color: var(--white);
         padding: 8px;
       }
     }
@@ -60,7 +58,7 @@
     max-height: 56px;
     padding: 8px 60px;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: var(--white);
     display: flex;
     align-items: center;
 
@@ -68,21 +66,6 @@
       display: flex;
       gap: 12.85px;
       align-items: center;
-
-      &_logoTextPlace {
-        display: flex;
-        font-weight: 600;
-        font-size: 25.7px;
-        line-height: 30.17px;
-        letter-spacing: 6%;
-
-        &_firstWord {
-          color: #347dca;
-        }
-        &_secondWord {
-          color: #0088a1;
-        }
-      }
     }
 
     &_right {
