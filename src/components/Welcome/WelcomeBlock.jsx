@@ -11,7 +11,8 @@ const WelcomeBlock = () => {
         Sveika, Alise!
       </h1>
       <h2 className={styles.welcomeContainer_welcomeBlock_mainBlock_subtitle}>
-        Aizpildi savu profilu un atrodi vislabāko saderību ar Ēnu devējiem!
+        Aizpildi savu profilu un <br />
+        atrodi vislabāko saderību ar Ēnu devējiem!
       </h2>
       <h3 className={styles.welcomeContainer_welcomeBlock_mainBlock_stepsTitle}>
         Tikai{" "}
