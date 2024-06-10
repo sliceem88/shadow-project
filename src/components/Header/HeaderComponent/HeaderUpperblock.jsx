@@ -10,9 +10,9 @@ function HeaderUpperblock() {
     <div className={styles.header_upperblock}>
       <HeaderTabs
         tabList={HeaderTabsUpper}
-        tabColor="#FFFFFF"
-        tabHoverColor="#84EAFF"
-        tabActiveColor="#FFFFFF"
+        tabColor="var(--white)"
+        tabHoverColor="var(--cyan)"
+        tabActiveColor="var(--white)"
       />
       <div className={styles.header_upperblock_right}>
         <div className={styles.header_upperblock_right_inputWrapper}>

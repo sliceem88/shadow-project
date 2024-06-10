@@ -1,7 +1,5 @@
 export const heroBlockTitleData = {
-  title:
-    "Izbaudi profesijas ēnošanas piedzīvojumu un atklāj savu karjeras potenciālu!",
-  subtitleSpan: "TryWork",
+  title: "Sapņo par citu profesiju, bet nezini, vai tā būtu īstā?",
   subtitle:
-    "ir platforma, kurā motivētas personas satiekas ar atsaucīgiem Ēnu devējiem.",
+    "Ienāc TryWork platformā un uzsāc savu jauno karjeras ceļojumu jau šodien!",
 };

@@ -12,6 +12,7 @@
 
     &_texts {
       color: var(--black-ish);
+      padding-right: 110px;
 
       &_title {
         font-weight: 600;
@@ -26,13 +27,6 @@
         line-height: 30px;
         letter-spacing: 0.4px;
         padding-bottom: 40px;
-
-        &_span {
-          font-weight: 600;
-          font-size: 20px;
-          line-height: 23.44px;
-          letter-spacing: 0.4px;
-        }
       }
     }
   }

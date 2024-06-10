@@ -15,10 +15,7 @@ const HeroBlockComponent = ({
         <div className={styles.heroblock_left_texts}>
           <p className={styles.heroblock_left_texts_title}>{titleData.title}</p>
           <p className={styles.heroblock_left_texts_subtitle}>
-            <span className={styles.heroblock_left_texts_subtitle_span}>
-              {titleData.subtitleSpan}
-            </span>
-            &nbsp;{titleData.subtitle}
+            {titleData.subtitle}
           </p>
         </div>
         <div>

@@ -15,33 +15,33 @@ function HeaderLowerblock() {
           <div>
             <Image src={Logo} alt="Logo" />
           </div>
-          <div className={styles.header_lowerblock_left_logoTextPlace}>
+          <div>
             <Image src={LogoText} alt="Logo text" />
           </div>
         </div>
       </Link>
       <HeaderTabs
         tabList={HeaderTabsLower}
-        tabColor="#212427"
-        tabHoverColor="#339FB3"
-        tabActiveColor="#0088A1"
+        tabColor="var(--black-ish)"
+        tabHoverColor="var(--green-blue-light-1)"
+        tabActiveColor="var(--green-blue)"
       />
       <div className={styles.header_lowerblock_right}>
         <Button
           sx={{
-            color: "#0088A1",
+            color: "var(--green-blue)",
             textTransform: "none",
             fontSize: "13px",
             letterSpacing: "0.46",
             padding: "4px 16px",
             fontWeight: "500",
             lineHeight: "22px",
-            border: "1.6px solid #0088A1",
+            border: "1.6px solid var(--green-blue)",
             borderRadius: "40px",
             width: "113px",
             height: "30px",
             "&:hover": {
-              border: "1.6px solid #0088A1",
+              border: "1.6px solid var(--green-blue)",
             },
           }}
           variant="outlined"
@@ -54,8 +54,8 @@ function HeaderLowerblock() {
         </Button>
         <Button
           sx={{
-            color: "#ffffff",
-            backgroundColor: "#0088A1",
+            color: "var(--white)",
+            backgroundColor: "var(--green-blue)",
             textTransform: "none",
             fontSize: "13px",
             letterSpacing: "0.46",
@@ -66,7 +66,7 @@ function HeaderLowerblock() {
             width: "113px",
             height: "30px",
             "&:hover": {
-              backgroundColor: "#0088A1",
+              backgroundColor: "var(--green-blue)",
             },
           }}
           variant="contained"
