@@ -1,6 +1,6 @@
 import Image from "next/image";
-import WavingHand from "@/components/Welcome/img/wavingHand.svg";
-import styles from "@/components/Welcome/Welcome.module.scss";
+import WavingHand from "./img/wavingHand.svg";
+import styles from "./Welcome.module.scss";
 import { Button } from "@mui/material";
 
 const WelcomePage = () => {
