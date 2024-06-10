@@ -1,5 +1,7 @@
 .header {
   box-shadow: var(--shadows);
+  z-index: 1;
+  position: relative;
 
   &_upperblock {
     max-height: 54px;
